@@ -2,10 +2,11 @@
   "name": "tradepicasso",
   "version": "1.0.0",
   "description": "The NBA Trade Picaso",
-  "main": "app/index.js",
+  "main": "server/app.js",
   "scripts": {
     "test": "test",
-    "run": "nodemon app/app.js"
+    "start": "nodemon server/app.js",
+    "migrate": "flyway migrate"
   },
   "repository": {
     "type": "git",
