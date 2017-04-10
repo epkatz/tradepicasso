@@ -1,0 +1,10 @@
+{
+  "Env": {
+    "dbConfig": {
+    "host"     : "localhost",
+    "user"     : "root",
+    "password" : "passwerd",
+    "database" : "tp"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "tradepicasso",
+  "version": "1.0.0",
+  "description": "The NBA Trade Picaso",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "test",
+    "run": "nodemon app/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tradepicasso"
+  },
+  "author": "epkatz",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.25.1",
+    "express": "^4.15.2",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
