@@ -1,17 +1,13 @@
-The Trade Picasso
-#
+# The Trade Picasso
 
-Automation of NBA GMs (More code, less triangles)
-##
+## Automation of NBA GMs (More code, less triangles)
 
-Todo
-###
+### Todo
 - Get some base trade rules working
 - Get a react component representing a player running
 
 
-Done
-###
+### Done
 - Install yarn
 - Install nodemon for hot-reloading
 - Load a simple html page with express
@@ -21,6 +17,5 @@ Done
 - Get a unit tests with hotreload working
 
 
-License
-####
+#### License
 Usage of this library is strictly limited to followers of our Lord and Savior, Kristaps The PorzinGod
