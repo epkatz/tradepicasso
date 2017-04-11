@@ -1,5 +1,5 @@
 const expect = require('chai').expect
-const playersModule = require('../app/players.js')
+const playersModule = require('../app/trade.js')
 
 describe('Player module', () => {
     it('should validate trade if salaries are equal', () => {

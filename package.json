@@ -4,19 +4,22 @@
   "description": "The NBA Trade Picaso",
   "main": "app/index.js",
   "scripts": {
-    "test": "mocha --recursive",
-    "start": "nodemon app/index.js",
-    "migrate": "flyway migrate"
+    "test": "NODE_ENV=test mocha",
+    "start": "nodemon app/index.js --exec 'yarn run check && node'",
+    "migrate": "flyway migrate",
+    "lint": "",
+    "check": "yarn run test && yarn run lint && yarn run migrate"
   },
   "repository": {
     "type": "git",
-    "url": "tradepicasso"
+    "url": "https://github.com/epkatz/tradepicasso"
   },
   "author": "epkatz",
   "license": "ISC",
   "dependencies": {
     "config": "^1.25.1",
     "express": "^4.15.2",
+    "lodash": "^4.17.4",
     "mysql": "^2.13.0"
   },
   "devDependencies": {
