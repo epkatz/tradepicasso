@@ -2,10 +2,10 @@
   "name": "tradepicasso",
   "version": "1.0.0",
   "description": "The NBA Trade Picaso",
-  "main": "server/app.js",
+  "main": "app/index.js",
   "scripts": {
-    "test": "test",
-    "start": "nodemon server/app.js",
+    "test": "mocha --recursive",
+    "start": "nodemon app/index.js",
     "migrate": "flyway migrate"
   },
   "repository": {
@@ -20,6 +20,9 @@
     "mysql": "^2.13.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "sinon": "^2.1.0"
   }
 }
