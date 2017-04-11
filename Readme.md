@@ -1,6 +1,6 @@
 Todo
 ###
-- Get a unit tests with hotreload working
+- Get some base trade rules working
 - Get a react component representing a player running
 
 
@@ -12,3 +12,5 @@ Done
 - Get mysql working
 - Install Flyway-db for keeping track of migration scripts
 - Run a migration script against mysql
+- Get a unit tests with hotreload working
+
