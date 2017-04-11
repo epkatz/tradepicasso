@@ -1,3 +1,9 @@
+The Trade Picasso
+#
+
+Automation of NBA GMs (More code, less triangles)
+##
+
 Todo
 ###
 - Get some base trade rules working
@@ -14,3 +20,7 @@ Done
 - Run a migration script against mysql
 - Get a unit tests with hotreload working
 
+
+License
+####
+Usage of this library is strictly limited to followers of our Lord and Savior, Kristaps The PorzinGod
