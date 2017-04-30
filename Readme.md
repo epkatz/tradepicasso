@@ -1,4 +1,4 @@
-# The Trade Picasso
+co# The Trade Picasso
 
 ## Automation of NBA GMs (More code, less triangles)
 
@@ -11,10 +11,11 @@
 - Install yarn
 - Install nodemon for hot-reloading
 - Load a simple html page with express
-- Get mysql working
+- Get mysql working (change to postgresql?)
 - Install Flyway-db for keeping track of migration scripts
 - Run a migration script against mysql
 - Get a unit tests with hotreload working
+- Setup babel and use es6 features
 
 
 #### License
