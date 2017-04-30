@@ -1,13 +1,8 @@
-co# The Trade Picasso
+# The Trade Picasso
 
 ## Automation of NBA GMs (More code, less triangles)
 
-### Todo
-- Get some base trade rules working
-- Get a react component representing a player running
-
-
-### Done
+### Changelog
 - Install yarn
 - Install nodemon for hot-reloading
 - Load a simple html page with express
@@ -16,6 +11,7 @@ co# The Trade Picasso
 - Run a migration script against mysql
 - Get a unit tests with hotreload working
 - Setup babel and use es6 features
+- Replace express with hapi
 
 
 #### License

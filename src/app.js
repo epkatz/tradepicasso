@@ -1,12 +1,26 @@
-import express from 'express';
-import path from 'path';
+import hapi from 'hapi';
 
-import db from './db';
-
-var app = express();
-
-app.get('/', function(req, res) {
-    res.sendFile('./html/index.html');
+// Create a server with a host and port
+const server = new hapi.Server();
+server.connection({ 
+    host: 'localhost', 
+    port: 8080 
 });
 
-app.listen(8080);
+// Add the route
+server.route({
+    method: 'GET',
+    path:'/hello', 
+    handler: function (request, reply) {
+        return reply('hello world');
+    }
+});
+
+// Start the server
+server.start((err) => {
+
+    if (err) {
+        throw err;
+    }
+    console.log('Server running at:', server.info.uri);
+});
