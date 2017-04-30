@@ -1,7 +1,57 @@
 {
-    "extends": "standard",
+  "rules": {
+      "indent": [
+          2,
+          2,
+          {
+              "SwitchCase": 1
+          }
+      ],
+      "quotes": [
+          2,
+          "single"
+      ],
+      "linebreak-style": [
+          2,
+          "unix"
+      ],
+      "semi": [
+          2,
+          "always"
+      ],
+      "no-param-reassign": [
+          2,
+          {
+              "props": false
+          }
+      ],
+      "no-underscore-dangle": 0,
+      "no-restricted-syntax": [
+        "error",
+        "ForInStatement",
+        "LabeledStatement",
+        "WithStatement"
+      ]
+  },
+  "ecmaFeatures": {
+      "modules": true
+  },
+  "env": {
+      "es6": true,
+      "node": true,
+      "mocha": true
+  },
     "plugins": [
-        "standard",
-        "promise"
-    ]
+      "flowtype"
+    ],
+    "extends": [
+        "airbnb/base",
+        "plugin:flowtype/recommended"
+    ],
+    "parser": "babel-eslint",
+    "settings": {
+        "flowtype": {
+            "onlyFilesWithFlowAnnotation": false
+        }
+    }
 }

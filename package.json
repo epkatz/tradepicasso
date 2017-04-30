@@ -2,11 +2,14 @@
   "name": "tradepicasso",
   "version": "1.0.0",
   "description": "The NBA Trade Picaso",
-  "main": "app/index.js",
+  "main": "src/app.js",
   "scripts": {
+    "lint": "eslint src",
     "test": "nodemon --exec 'NODE_ENV=test mocha'",
-    "start": "nodemon app/index.js",
-    "migrate": "flyway migrate"
+    "migrate": "flyway migrate",
+    "start": "npm run babel-watch & nodemon dist/app.js --delay 2",
+    "babel-watch": "rm -rf ./dist; npm run babel -- --watch",
+    "babel": "babel src --out-dir dist --source-maps"
   },
   "repository": {
     "type": "git",
@@ -15,12 +18,18 @@
   "author": "epkatz",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.24.1",
     "config": "^1.25.1",
     "express": "^4.15.2",
     "lodash": "^4.17.4",
     "mysql": "^2.13.0"
   },
   "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
     "chai": "^3.5.0",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.0",
