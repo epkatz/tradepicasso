@@ -7,7 +7,7 @@ server.connection({
     port: 8080 
 });
 
-// Add the route
+// Routes
 server.route({
     method: 'GET',
     path:'/hello', 
@@ -22,5 +22,5 @@ server.start((err) => {
     if (err) {
         throw err;
     }
-    console.log('Server running at:', server.info.uri);
+    console.log(`Server running at: ${server.info.uri}`);
 });
