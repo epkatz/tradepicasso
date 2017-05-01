@@ -1,3 +1,5 @@
+// @flow
+
 import hapi from 'hapi';
 
 // Create a server with a host and port

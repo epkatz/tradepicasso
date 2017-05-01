@@ -6,7 +6,6 @@
   "scripts": {
     "lint": "eslint src",
     "test": "nodemon --exec 'NODE_ENV=test mocha'",
-    "migrate": "flyway migrate",
     "start": "npm run babel-watch & nodemon dist/app.js --delay 2",
     "babel-watch": "rm -rf ./dist; npm run babel -- --watch",
     "babel": "babel src --out-dir dist --source-maps"
@@ -30,12 +29,14 @@
     "babel-preset-env": "^1.4.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2016": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
     "chai": "^3.5.0",
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "flow-bin": "^0.45.0",
     "mocha": "^3.2.0",
     "nodemon": "^1.11.0",
     "sinon": "^2.1.0"

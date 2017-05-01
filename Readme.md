@@ -12,6 +12,8 @@
 - Get a unit tests with hotreload working
 - Setup babel and use es6 features
 - Replace express with hapi
+- Replace mysql with knex
+- Added flow type checking
 
 
 #### License
